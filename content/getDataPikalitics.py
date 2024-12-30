@@ -2,6 +2,20 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 from rich.console import Console
+import datetime
+import ast
+import os
+
+# Ottieni la data e l'ora correnti
+oggi = datetime.date.today()
+
+print(oggi)
+
+percorso_corrente = os.path.dirname(os.path.abspath(__file__))
+percorso_completo = os.path.join(percorso_corrente, f"{oggi}")
+print(percorso_corrente, percorso_completo)
+os.makedirs(percorso_completo, exist_ok=True)
+
 
 console = Console()
 
@@ -109,7 +123,7 @@ for Nome_File in list(teammates_pokemon_list.keys()):
     copia_nome_file = Nome_File
     if Nome_File[-3]+Nome_File[-2]+Nome_File[-1]=="%20":Nome_File=Nome_File[:-3]
     while Nome_File[-1]==" ":Nome_File=Nome_File[:-1]
-    with open(f"{unquote(Nome_File)}.md", "w") as f:
+    with open(f"{oggi}\\{unquote(Nome_File)}.md", "w") as f:
         string = """---
 tags:"""
         for tipi in teammates_pokemon_list[copia_nome_file][1]:
@@ -177,10 +191,10 @@ for item in lista_dei_medi.keys():
     string+=f"\n- #{item} : {lista_dei_medi[item]}"
 for item in lista_dei_cattivi.keys():
     string+=f"\n- #{item} : {lista_dei_cattivi[item]}"
-with open("Resoconto.md", "w") as f:
+with open(f"{oggi}\\Resoconto.md", "w") as f:
     f.write(string)
     
-with open("Archetipi.md","w") as f:
+with open(f"{oggi}\\Archetipi.md","w") as f:
     f.write(f"{Archetipi}")
 
 
