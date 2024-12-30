@@ -2,9 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 from rich.console import Console
-import plotly.express as px
-import pandas as pd
-import ast
 
 console = Console()
 
@@ -143,26 +140,6 @@ for pokemons in list(teammates_pokemon_list.keys()):
     Archetipi[x] = lista
     x+=1
 
-def plot_cluster_venn(data):
-    # Prepara i dati per un DataFrame
-    rows = []
-    for name, elements in data.items():
-        for elem in elements:
-            rows.append({"Set": name, "Element": elem})
-    
-    df = pd.DataFrame(rows)
-
-    # Usa Plotly Express per creare un grafico scatter
-    fig = px.scatter(
-        df,
-        x="Set",
-        y="Element",
-        color="Set",
-        title="Cluster Representation of Sets",
-        labels={"Element": "Element", "Set": "Set"}
-    )
-    fig.show()
-
 weaknessses = {}
 for tipo in type_chart.keys():weaknessses[tipo] = 1
 for elemento in tipi_finali:
@@ -203,6 +180,7 @@ for item in lista_dei_cattivi.keys():
 with open("Resoconto.md", "w") as f:
     f.write(string)
     
-plot_cluster_venn(Archetipi)
+with open("Archetipi.md","w") as f:
+    f.write(f"{Archetipi}")
 
 
