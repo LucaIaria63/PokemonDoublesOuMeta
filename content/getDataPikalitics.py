@@ -13,7 +13,6 @@ print(oggi)
 
 percorso_corrente = os.path.dirname(os.path.abspath(__file__))
 percorso_completo = os.path.join(percorso_corrente, f"{oggi}")
-print(percorso_corrente, percorso_completo)
 os.makedirs(percorso_completo, exist_ok=True)
 
 
@@ -74,13 +73,16 @@ def fetch_teammates(pokemon_name):
         teammates_section = soup.find('div', {'id': 'dex_team_wrapper'})
         typePokemon = soup.find('span', {'class': 'inline-block pokedex-header-types'})
         usage_singolo = soup.find('div', {'class': 'pokemon-ind-summary-text gold-font'})
+        items_section = soup.find('div', {'class': 'dex-items-wrapper'})
+        
         types = []
         for Type in typePokemon.find_all('span'):
             types.append(Type.text)
-        if len(types)==0:types=["NonTrovato"]
+        if len(types)==0: types = ["NonTrovato"]
+
         if not teammates_section:
             print(f"Non sono stati trovati compagni di squadra per {pokemon_name}.")
-            return [[{'name': "NotFound", 'usage': "0%" }], types, usage_singolo.text]
+            return [[{'name': "NotFound", 'usage': "0%" }], types, usage_singolo.text, []]
         
         teammates = []
         for entry in teammates_section.find_all('a', class_='teammate_entry'):
@@ -90,13 +92,23 @@ def fetch_teammates(pokemon_name):
             percentage = percentage_div.text.strip() if percentage_div else "0%"
             
             teammates.append({'name': name, 'usage': percentage})
-        
-        return [teammates, types, usage_singolo.text]
+
+        items = []
+        if items_section:
+            for entry in items_section.find_all('a', class_='item_entry'):
+                item_name = entry['data-name'].strip() if 'data-name' in entry.attrs else "Sconosciuto"
+                
+                item_percentage_div = entry.find('div', style="display:inline-block;float:right;")
+                item_percentage = item_percentage_div.text.strip() if item_percentage_div else "0%"
+                
+                items.append({'item': item_name, 'usage': item_percentage})
+
+        return [teammates, types, usage_singolo.text, items]
     
     except requests.exceptions.RequestException as e:
         print(f"Errore durante la richiesta per {pokemon_name}: {e}")
-        types=["NonTrovato"]
-        return [[{'name': "NotFound", 'usage': "0%" }], types, "0%"]
+        types = ["NonTrovato"]
+        return [[{'name': "NotFound", 'usage': "0%" }], types, "0%", []]
 
 
 pokemon = "Incineroar" 
@@ -121,27 +133,34 @@ tipi_finali = {}
 for Nome_File in list(teammates_pokemon_list.keys()):
     string = ""
     copia_nome_file = Nome_File
-    if Nome_File[-3]+Nome_File[-2]+Nome_File[-1]=="%20":Nome_File=Nome_File[:-3]
-    while Nome_File[-1]==" ":Nome_File=Nome_File[:-1]
-    with open(f"{oggi}\\{unquote(Nome_File)}.md", "w") as f:
+    if Nome_File[-3]+Nome_File[-2]+Nome_File[-1]=="%20": Nome_File=Nome_File[:-3]
+    while Nome_File[-1]==" ": Nome_File=Nome_File[:-1]
+    with open(os.path.join(percorso_completo, f"{unquote(Nome_File)}.md"), "w") as f:
         string = """---
 tags:"""
         for tipi in teammates_pokemon_list[copia_nome_file][1]:
-            string+=f"\n- {tipi}"
+            string += f"\n- {tipi}"
         try:
-            tipi_finali[f"{teammates_pokemon_list[copia_nome_file][1]}"]+=1
+            tipi_finali[f"{teammates_pokemon_list[copia_nome_file][1]}"] += 1
         except:
-            tipi_finali[f"{teammates_pokemon_list[copia_nome_file][1]}"]=1
-        string+="\n---"
-        string+=f"\n# Usage\n- {teammates_pokemon_list[copia_nome_file][2]}"
-        string+= "\n# Teammates"
+            tipi_finali[f"{teammates_pokemon_list[copia_nome_file][1]}"] = 1
+        string += "\n---"
+        string += f"\n# Usage\n- {teammates_pokemon_list[copia_nome_file][2]}"
+        string += "\n# Teammates"
         for nome in teammates_pokemon_list[copia_nome_file][0]:
             vero_nome = nome["name"]
-            while vero_nome[-1]==" ":vero_nome=vero_nome[:-1]
-            if vero_nome[-3]+vero_nome[-2]+vero_nome[-1]=="%20":vero_nome=vero_nome[:-3]
-            while vero_nome[-1]==" ":vero_nome=vero_nome[:-1]
+            while vero_nome[-1] == " ": vero_nome = vero_nome[:-1]
+            if vero_nome[-3] + vero_nome[-2] + vero_nome[-1] == "%20": vero_nome = vero_nome[:-3]
+            while vero_nome[-1] == " ": vero_nome = vero_nome[:-1]
             usage = nome["usage"]
             string += f"\n- [[{unquote(vero_nome)}]] : {usage}"
+
+        string += "\n# Items"
+        for item in teammates_pokemon_list[copia_nome_file][3]:
+            item_name = item["item"]
+            item_usage = item["usage"]
+            string += f"\n- {item_name} : {item_usage}"
+
         f.write(string)
 
 Archetipi = {}
@@ -191,10 +210,10 @@ for item in lista_dei_medi.keys():
     string+=f"\n- #{item} : {lista_dei_medi[item]}"
 for item in lista_dei_cattivi.keys():
     string+=f"\n- #{item} : {lista_dei_cattivi[item]}"
-with open(f"{oggi}\\Resoconto.md", "w") as f:
+with open(os.path.join(percorso_completo, f"{oggi}\\Resoconto.md", "w")) as f:
     f.write(string)
     
-with open(f"{oggi}\\Archetipi.md","w") as f:
+with open(os.path.join(percorso_completo, f"{oggi}\\Archetipi.md","w")) as f:
     f.write(f"{Archetipi}")
 
 
