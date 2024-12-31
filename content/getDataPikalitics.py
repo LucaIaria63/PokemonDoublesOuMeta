@@ -220,9 +220,9 @@ for Archetipo in list(copiaArchetipi.keys()):
         
 string = "# Archetipi:"
 for Archetipo in Archetipi.keys():
-    string+=f"\n## Archetipo n{Archetipo}: "
+    string+=f"\n## Archetipo n°{Archetipo}: "
     for pokemon in Archetipi[Archetipo]:
-        string+=f"\n- {pokemon}"
+        string+=f"\n- {unquote(pokemon)}"
 with open(os.path.join(percorso_completo, f"Archetipi.md"), "w") as f:
     f.write(f"{string}")
 
