@@ -210,10 +210,20 @@ for item in lista_dei_medi.keys():
     string+=f"\n- #{item} : {lista_dei_medi[item]}"
 for item in lista_dei_cattivi.keys():
     string+=f"\n- #{item} : {lista_dei_cattivi[item]}"
-with open(os.path.join(percorso_completo, f"{oggi}\\Resoconto.md", "w")) as f:
+with open(os.path.join(percorso_completo, f"Resoconto.md"),"w") as f:
     f.write(string)
-    
-with open(os.path.join(percorso_completo, f"{oggi}\\Archetipi.md","w")) as f:
+
+copiaArchetipi = Archetipi
+for Archetipo in list(copiaArchetipi.keys()):
+    if len(copiaArchetipi[Archetipo])<=1:
+        Archetipi.pop(Archetipo)
+        
+string = "# Archetipi:"
+for Archetipo in Archetipi.keys():
+    string+=f"\n## Archetipo n{Archetipo}: "
+    for pokemon in Archetipi[Archetipo]:
+        string+=f"\n- {pokemon}"
+with open(os.path.join(percorso_completo, f"Archetipi.md"), "w") as f:
     f.write(f"{Archetipi}")
 
 
