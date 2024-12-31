@@ -224,6 +224,6 @@ for Archetipo in Archetipi.keys():
     for pokemon in Archetipi[Archetipo]:
         string+=f"\n- {pokemon}"
 with open(os.path.join(percorso_completo, f"Archetipi.md"), "w") as f:
-    f.write(f"{Archetipi}")
+    f.write(f"{string}")
 
 
