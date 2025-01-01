@@ -1,0 +1,20 @@
+---
+tags:
+- ground
+- grass
+---
+# Usage
+- 0%
+# Teammates
+- [[2025-01-02/Weezing-Galar|Weezing-Galar]] : 82.225%
+- [[2025-01-02/Typhlosion-Hisui|Typhlosion-Hisui]] : 70.464%
+- [[2025-01-02/Garchomp|Garchomp]] : 68.321%
+- [[2025-01-02/Pawmot|Pawmot]] : 65.322%
+- [[2025-01-02/Corviknight|Corviknight]] : 64.083%
+- [[2025-01-02/Incineroar|Incineroar]] : 9.306%
+- [[2025-01-02/Regigigas|Regigigas]] : 5.927%
+- [[2025-01-02/Iron%20Hands|Iron Hands]] : 5.075%
+- [[2025-01-02/Slaking|Slaking]] : 4.951%
+- [[2025-01-02/Sneasler|Sneasler]] : 3.988%
+- [[2025-01-02/Whimsicott|Whimsicott]] : 3.230%
+# Items

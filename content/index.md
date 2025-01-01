@@ -2,5 +2,5 @@
 title:  Dati finali
 ---
 # Ultimo aggiornamento
-- [[2025-01-01/Resoconto]]
-- [[2025-01-01/Archetipi]]
+- [[2025-01-02/Resoconto]]
+- [[2025-01-02/Archetipi]]
