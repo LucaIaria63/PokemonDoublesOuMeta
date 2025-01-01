@@ -49,7 +49,7 @@ def calculate_weakness(defender_types, attacking_type):
     return multiplier
 
 def display_progress(iteration, total):
-    bar_max_width = 45  
+    bar_max_width = 30
     bar_current_width = bar_max_width * iteration // total
     bar = "█" * bar_current_width + "-" * (bar_max_width - bar_current_width)
     progress = "%.1f" % (iteration / total * 100)
