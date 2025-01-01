@@ -153,7 +153,7 @@ tags:"""
             if vero_nome[-3] + vero_nome[-2] + vero_nome[-1] == "%20": vero_nome = vero_nome[:-3]
             while vero_nome[-1] == " ": vero_nome = vero_nome[:-1]
             usage = nome["usage"]
-            string += f"\n- [[{oggi}/{unquote(vero_nome)}]] : {usage}"
+            string += f"\n- [[{oggi}/{vero_nome}|{unquote(vero_nome)}]] : {usage}"
 
         string += "\n# Items"
         for item in teammates_pokemon_list[copia_nome_file][3]:
@@ -235,3 +235,4 @@ title:  Dati finali
 
 with open(os.path.join(percorso_corrente, "index.md"),"w") as f:
     f.write(f"{string}")
+
