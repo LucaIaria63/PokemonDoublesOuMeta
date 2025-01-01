@@ -1,6 +1,6 @@
 ---
-title: GetData
+title:  Dati finali
 ---
 # Ultimo aggiornamento
-[[Resoconto]]
-[[Archetipi]]
+- [[2025-01-01\Resoconto]]
+- [[2025-01-01\Archetipi]]
