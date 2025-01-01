@@ -230,8 +230,8 @@ string=f"""---
 title:  Dati finali
 ---
 # Ultimo aggiornamento
-- [[{oggi}\\Resoconto]]
-- [[{oggi}\\Archetipi]]"""
+- [[{oggi}/Resoconto]]
+- [[{oggi}/Archetipi]]"""
 
 with open(os.path.join(percorso_corrente, "index.md"),"w") as f:
     f.write(f"{string}")
