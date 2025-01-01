@@ -5,15 +5,15 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[Raging Bolt]] : 70.515%
-- [[Wo-Chien]] : 65.058%
-- [[Pecharunt]] : 64.080%
-- [[Carbink]] : 63.909%
-- [[Hitmontop]] : 63.909%
-- [[Volcanion]] : 14.539%
-- [[Hatterene]] : 11.829%
-- [[Ursaluna]] : 11.255%
-- [[Gholdengo]] : 10.203%
-- [[Meowscarada]] : 10.189%
-- [[Uxie]] : 9.935%
+- [[2025-01-01/Raging Bolt]] : 70.515%
+- [[2025-01-01/Wo-Chien]] : 65.058%
+- [[2025-01-01/Pecharunt]] : 64.080%
+- [[2025-01-01/Carbink]] : 63.909%
+- [[2025-01-01/Hitmontop]] : 63.909%
+- [[2025-01-01/Volcanion]] : 14.539%
+- [[2025-01-01/Hatterene]] : 11.829%
+- [[2025-01-01/Ursaluna]] : 11.255%
+- [[2025-01-01/Gholdengo]] : 10.203%
+- [[2025-01-01/Meowscarada]] : 10.189%
+- [[2025-01-01/Uxie]] : 9.935%
 # Items

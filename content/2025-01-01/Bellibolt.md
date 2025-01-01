@@ -5,15 +5,15 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[Incineroar]] : 90.943%
-- [[Oranguru]] : 81.165%
-- [[Farigiraf]] : 77.861%
-- [[Ursaluna]] : 75.647%
-- [[Sinistcha]] : 75.612%
-- [[Rillaboom]] : 17.364%
-- [[Glimmora]] : 15.215%
-- [[Landorus]] : 15.176%
-- [[Wo-Chien]] : 15.176%
-- [[Iron Bundle]] : 5.425%
-- [[Armarouge]] : 5.325%
+- [[2025-01-01/Incineroar]] : 90.943%
+- [[2025-01-01/Oranguru]] : 81.165%
+- [[2025-01-01/Farigiraf]] : 77.861%
+- [[2025-01-01/Ursaluna]] : 75.647%
+- [[2025-01-01/Sinistcha]] : 75.612%
+- [[2025-01-01/Rillaboom]] : 17.364%
+- [[2025-01-01/Glimmora]] : 15.215%
+- [[2025-01-01/Landorus]] : 15.176%
+- [[2025-01-01/Wo-Chien]] : 15.176%
+- [[2025-01-01/Iron Bundle]] : 5.425%
+- [[2025-01-01/Armarouge]] : 5.325%
 # Items

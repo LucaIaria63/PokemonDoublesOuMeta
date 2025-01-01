@@ -5,15 +5,15 @@ tags:
 # Usage
 - 2%
 # Teammates
-- [[Ninetales-Alola]] : 78.551%
-- [[Indeedee]] : 77.704%
-- [[Smeargle]] : 77.627%
-- [[Volcarona]] : 77.627%
-- [[Primarina]] : 77.626%
-- [[Indeedee-F]] : 17.819%
-- [[Iron Hands]] : 8.252%
-- [[Torkoal]] : 8.228%
-- [[Ogerpon-Wellspring]] : 7.839%
-- [[Diancie]] : 7.061%
-- [[Sinistcha]] : 6.080%
+- [[2025-01-01/Ninetales-Alola]] : 78.551%
+- [[2025-01-01/Indeedee]] : 77.704%
+- [[2025-01-01/Smeargle]] : 77.627%
+- [[2025-01-01/Volcarona]] : 77.627%
+- [[2025-01-01/Primarina]] : 77.626%
+- [[2025-01-01/Indeedee-F]] : 17.819%
+- [[2025-01-01/Iron Hands]] : 8.252%
+- [[2025-01-01/Torkoal]] : 8.228%
+- [[2025-01-01/Ogerpon-Wellspring]] : 7.839%
+- [[2025-01-01/Diancie]] : 7.061%
+- [[2025-01-01/Sinistcha]] : 6.080%
 # Items

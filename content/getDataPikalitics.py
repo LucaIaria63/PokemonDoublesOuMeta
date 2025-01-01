@@ -153,7 +153,7 @@ tags:"""
             if vero_nome[-3] + vero_nome[-2] + vero_nome[-1] == "%20": vero_nome = vero_nome[:-3]
             while vero_nome[-1] == " ": vero_nome = vero_nome[:-1]
             usage = nome["usage"]
-            string += f"\n- [[{unquote(vero_nome)}]] : {usage}"
+            string += f"\n- [[{oggi}/{unquote(vero_nome)}]] : {usage}"
 
         string += "\n# Items"
         for item in teammates_pokemon_list[copia_nome_file][3]:

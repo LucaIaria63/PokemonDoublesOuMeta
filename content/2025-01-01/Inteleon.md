@@ -5,15 +5,15 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[Farigiraf]] : 50.257%
-- [[Ursaluna]] : 50.111%
-- [[Incineroar]] : 49.016%
-- [[Gholdengo]] : 48.678%
-- [[Meowscarada]] : 48.652%
-- [[Sinistcha]] : 25.622%
-- [[Gallade]] : 25.621%
-- [[Raikou]] : 25.573%
-- [[Metagross]] : 25.573%
-- [[Empoleon]] : 16.494%
-- [[Iron Bundle]] : 12.629%
+- [[2025-01-01/Farigiraf]] : 50.257%
+- [[2025-01-01/Ursaluna]] : 50.111%
+- [[2025-01-01/Incineroar]] : 49.016%
+- [[2025-01-01/Gholdengo]] : 48.678%
+- [[2025-01-01/Meowscarada]] : 48.652%
+- [[2025-01-01/Sinistcha]] : 25.622%
+- [[2025-01-01/Gallade]] : 25.621%
+- [[2025-01-01/Raikou]] : 25.573%
+- [[2025-01-01/Metagross]] : 25.573%
+- [[2025-01-01/Empoleon]] : 16.494%
+- [[2025-01-01/Iron Bundle]] : 12.629%
 # Items

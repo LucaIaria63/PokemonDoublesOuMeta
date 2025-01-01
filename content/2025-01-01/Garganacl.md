@@ -5,15 +5,15 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[Tyranitar]] : 32.356%
-- [[Ting-Lu]] : 29.433%
-- [[Amoonguss]] : 23.609%
-- [[Indeedee-F]] : 19.586%
-- [[Hoopa-Unbound]] : 17.885%
-- [[Diancie]] : 17.872%
-- [[Chi-Yu]] : 17.788%
-- [[Farigiraf]] : 16.876%
-- [[Dragonite]] : 16.759%
-- [[Sylveon]] : 16.347%
-- [[Greninja]] : 16.321%
+- [[2025-01-01/Tyranitar]] : 32.356%
+- [[2025-01-01/Ting-Lu]] : 29.433%
+- [[2025-01-01/Amoonguss]] : 23.609%
+- [[2025-01-01/Indeedee-F]] : 19.586%
+- [[2025-01-01/Hoopa-Unbound]] : 17.885%
+- [[2025-01-01/Diancie]] : 17.872%
+- [[2025-01-01/Chi-Yu]] : 17.788%
+- [[2025-01-01/Farigiraf]] : 16.876%
+- [[2025-01-01/Dragonite]] : 16.759%
+- [[2025-01-01/Sylveon]] : 16.347%
+- [[2025-01-01/Greninja]] : 16.321%
 # Items

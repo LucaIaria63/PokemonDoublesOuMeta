@@ -5,15 +5,15 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[Ogerpon-Wellspring]] : 48.246%
-- [[Farigiraf]] : 31.573%
-- [[Chien-Pao]] : 29.407%
-- [[Landorus-Therian]] : 28.197%
-- [[Conkeldurr]] : 27.666%
-- [[Heatran]] : 27.505%
-- [[Dusclops]] : 27.068%
-- [[Landorus]] : 24.157%
-- [[Incineroar]] : 21.223%
-- [[Ogerpon-Hearthflame]] : 20.662%
-- [[Rillaboom]] : 19.579%
+- [[2025-01-01/Ogerpon-Wellspring]] : 48.246%
+- [[2025-01-01/Farigiraf]] : 31.573%
+- [[2025-01-01/Chien-Pao]] : 29.407%
+- [[2025-01-01/Landorus-Therian]] : 28.197%
+- [[2025-01-01/Conkeldurr]] : 27.666%
+- [[2025-01-01/Heatran]] : 27.505%
+- [[2025-01-01/Dusclops]] : 27.068%
+- [[2025-01-01/Landorus]] : 24.157%
+- [[2025-01-01/Incineroar]] : 21.223%
+- [[2025-01-01/Ogerpon-Hearthflame]] : 20.662%
+- [[2025-01-01/Rillaboom]] : 19.579%
 # Items

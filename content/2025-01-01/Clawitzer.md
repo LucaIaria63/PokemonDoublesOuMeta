@@ -5,15 +5,15 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[Cresselia]] : 86.395%
-- [[Conkeldurr]] : 83.628%
-- [[Chien-Pao]] : 83.358%
-- [[Chi-Yu]] : 83.356%
-- [[Chesnaught]] : 70.565%
-- [[Cinderace]] : 12.791%
-- [[Comfey]] : 7.024%
-- [[Magnezone]] : 5.943%
-- [[Gallade]] : 5.943%
-- [[Drifblim]] : 5.943%
-- [[Kleavor]] : 5.943%
+- [[2025-01-01/Cresselia]] : 86.395%
+- [[2025-01-01/Conkeldurr]] : 83.628%
+- [[2025-01-01/Chien-Pao]] : 83.358%
+- [[2025-01-01/Chi-Yu]] : 83.356%
+- [[2025-01-01/Chesnaught]] : 70.565%
+- [[2025-01-01/Cinderace]] : 12.791%
+- [[2025-01-01/Comfey]] : 7.024%
+- [[2025-01-01/Magnezone]] : 5.943%
+- [[2025-01-01/Gallade]] : 5.943%
+- [[2025-01-01/Drifblim]] : 5.943%
+- [[2025-01-01/Kleavor]] : 5.943%
 # Items

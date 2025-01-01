@@ -6,15 +6,15 @@ tags:
 # Usage
 - 19%
 # Teammates
-- [[Chien-Pao]] : 43.053%
-- [[Rillaboom]] : 31.985%
-- [[Ogerpon-Wellspring]] : 31.725%
-- [[Dragonite]] : 29.916%
-- [[Tornadus]] : 27.262%
-- [[Landorus-Therian]] : 23.826%
-- [[Kingambit]] : 21.843%
-- [[Gholdengo]] : 21.764%
-- [[Archaludon]] : 18.393%
-- [[Incineroar]] : 16.446%
-- [[Raging Bolt]] : 14.642%
+- [[2025-01-01/Chien-Pao]] : 43.053%
+- [[2025-01-01/Rillaboom]] : 31.985%
+- [[2025-01-01/Ogerpon-Wellspring]] : 31.725%
+- [[2025-01-01/Dragonite]] : 29.916%
+- [[2025-01-01/Tornadus]] : 27.262%
+- [[2025-01-01/Landorus-Therian]] : 23.826%
+- [[2025-01-01/Kingambit]] : 21.843%
+- [[2025-01-01/Gholdengo]] : 21.764%
+- [[2025-01-01/Archaludon]] : 18.393%
+- [[2025-01-01/Incineroar]] : 16.446%
+- [[2025-01-01/Raging Bolt]] : 14.642%
 # Items

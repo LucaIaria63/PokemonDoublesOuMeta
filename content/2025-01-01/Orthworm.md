@@ -5,15 +5,15 @@ tags:
 # Usage
 - 1%
 # Teammates
-- [[Ting-Lu]] : 61.917%
-- [[Chien-Pao]] : 59.942%
-- [[Tyranitar]] : 43.716%
-- [[Dragonite]] : 41.508%
-- [[Ogerpon-Wellspring]] : 28.837%
-- [[Entei]] : 28.514%
-- [[Glimmora]] : 23.613%
-- [[Houndstone]] : 23.488%
-- [[Sinistcha]] : 21.315%
-- [[Tornadus]] : 10.586%
-- [[Ninetales-Alola]] : 10.313%
+- [[2025-01-01/Ting-Lu]] : 61.917%
+- [[2025-01-01/Chien-Pao]] : 59.942%
+- [[2025-01-01/Tyranitar]] : 43.716%
+- [[2025-01-01/Dragonite]] : 41.508%
+- [[2025-01-01/Ogerpon-Wellspring]] : 28.837%
+- [[2025-01-01/Entei]] : 28.514%
+- [[2025-01-01/Glimmora]] : 23.613%
+- [[2025-01-01/Houndstone]] : 23.488%
+- [[2025-01-01/Sinistcha]] : 21.315%
+- [[2025-01-01/Tornadus]] : 10.586%
+- [[2025-01-01/Ninetales-Alola]] : 10.313%
 # Items

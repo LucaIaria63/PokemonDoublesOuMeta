@@ -5,5 +5,5 @@ tags:
 # Usage
 - 0%
 # Teammates
-- [[NotFound]] : 0%
+- [[2025-01-01/NotFound]] : 0%
 # Items
