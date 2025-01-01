@@ -226,4 +226,12 @@ for Archetipo in Archetipi.keys():
 with open(os.path.join(percorso_completo, f"Archetipi.md"), "w") as f:
     f.write(f"{string}")
 
+string=f"""---
+title Dati finali
+---
+# Ultimo aggiornamento
+- [[{oggi}\\Resoconto]]
+- [[{oggi}\\Archetipi]]"""
 
+with open(os.path.join(percorso_corrente, "index.md") as f:
+    f.write(f"{string}")
