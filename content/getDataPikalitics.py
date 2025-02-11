@@ -113,7 +113,7 @@ def fetch_teammates(pokemon_name):
                     else:
                         break
                 try:
-                    Mon_mosse[move.text][mossa].append(pokemon_name)
+                    if pokemon_name not in Mon_mosse[move.text][mossa]: Mon_mosse[move.text][mossa].append(pokemon_name)
                 except:
                     Mon_mosse[move.text][mossa] = []
                     Mon_mosse[move.text][mossa].append(pokemon_name)
@@ -177,9 +177,8 @@ tags:"""
             string += f"\n- [[{oggi}/{vero_nome}|{unquote(vero_nome)}]] : {usage}"
 
         string += "\n# Items"
-        print(teammates_pokemon_list[copia_nome_file][3])
         for item in teammates_pokemon_list[copia_nome_file][3]:
-            print(item, "lalalal")
+            pass
             #item_name = item["item"]
             #item_usage = item["usage"]
             #string += f"\n- {item_name} : {item_usage}"
@@ -292,20 +291,17 @@ title:  Coverage di un tipo nel meta
 ---
 """
 for tipo in top_50.keys():
-    print(tipo, ":", top_50[tipo], "Coverage positiva :", top_50_coverage_up[tipo], "Coverage negativa :", top_50_coverage_down[tipo])
     string+=f"# {tipo} : {top_50[tipo]} \n"
     string+=f"## Coverage positiva :\n"
     for coverage in list(top_50_coverage_up[tipo]):
-        string+=f"- {unquote(coverage)}\n"
+        string+=f"- [[{oggi}/{unquote(coverage)}|{unquote(pokemon)}]]\n"
     string+=f"\n## Coverage negativa :\n"
     for coverage in list(top_50_coverage_down[tipo]):
-        string+=f"- {unquote(coverage)}\n"
+        string+=f"- [[{oggi}/{unquote(coverage)}|{unquote(pokemon)}]]\n"
 
 with open(os.path.join(percorso_completo, "Coverage di un tipo nel meta.md"),"w") as f:
     f.write(string)
 
-print()
-print(Mon_mosse)
 
 string = """---
 title:  Mosse usate nell meta
@@ -317,7 +313,7 @@ for tipo in Mon_mosse.keys():
     for mozza in Mon_mosse[tipo].keys():
         string+=f"## {mozza}\n"
         for pokemon in Mon_mosse[tipo][mozza]:
-            string+=f"- [[{unquote(pokemon)}]]\n"
+            string+=f"- [[{oggi}/{unquote(pokemon)}|{unquote(pokemon)}]]\n"
 
 with open(os.path.join(percorso_completo, "Mosse usate nel meta.md"),"w") as f:
     f.write(string)
