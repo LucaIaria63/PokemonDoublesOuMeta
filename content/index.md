@@ -1,6 +1,8 @@
 ---
-title: Welcome to Quartz
+title:  Dati finali
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+# Ultimo aggiornamento
+- [[2025-02-11/Resoconto]]
+- [[2025-02-11/Archetipi]]
+- [[2025-02-11/Coverage di un tipo nel meta]]
+- [[2025-02-11/Mosse usate nel meta]]

@@ -1,0 +1,464 @@
+{
+    "1": [
+        "Incineroar",
+        "Rillaboom",
+        "Iron%20Hands",
+        "Ninetales-Alola",
+        "Kyurem",
+        "Comfey"
+    ],
+    "2": [
+        "Rillaboom",
+        "Incineroar",
+        "Iron%20Hands",
+        "Ninetales-Alola",
+        "Kyurem",
+        "Comfey"
+    ],
+    "3": [
+        "Iron%20Hands",
+        "Rillaboom",
+        "Incineroar",
+        "Ninetales-Alola",
+        "Comfey",
+        "Kyurem"
+    ],
+    "4": [
+        "Ninetales-Alola",
+        "Kyurem",
+        "Rillaboom",
+        "Incineroar",
+        "Iron%20Hands",
+        "Comfey"
+    ],
+    "5": [
+        "Kyurem",
+        "Ninetales-Alola",
+        "Incineroar",
+        "Rillaboom",
+        "Iron%20Hands",
+        "Comfey"
+    ],
+    "6": [
+        "Comfey",
+        "Rillaboom",
+        "Ninetales-Alola",
+        "Iron%20Hands",
+        "Incineroar",
+        "Kyurem"
+    ],
+    "7": [
+        "Ogerpon-Wellspring",
+        "Tornadus",
+        "Chien-Pao",
+        "Landorus",
+        "Incineroar",
+        "Archaludon",
+        "Gholdengo"
+    ],
+    "8": [
+        "Landorus",
+        "Tornadus",
+        "Ogerpon-Wellspring"
+    ],
+    "9": [
+        "Sinistcha",
+        "Incineroar",
+        "Landorus",
+        "Iron%20Hands",
+        "Archaludon"
+    ],
+    "10": [
+        "Tornadus",
+        "Landorus",
+        "Ogerpon-Wellspring",
+        "Gholdengo",
+        "Ogerpon-Hearthflame"
+    ],
+    "11": [
+        "Gholdengo",
+        "Chien-Pao",
+        "Landorus-Therian",
+        "Glimmora",
+        "Dragonite",
+        "Roaring%20Moon",
+        "Tornadus"
+    ],
+    "12": [
+        "Raging%20Bolt",
+        "Ninetales-Alola",
+        "Ogerpon-Hearthflame",
+        "Incineroar",
+        "Rillaboom",
+        "Chien-Pao",
+        "Landorus",
+        "Ogerpon-Wellspring"
+    ],
+    "13": [
+        "Archaludon",
+        "Pelipper",
+        "Landorus",
+        "Rillaboom"
+    ],
+    "14": [
+        "Chien-Pao",
+        "Glimmora",
+        "Dragonite",
+        "Gholdengo",
+        "Roaring%20Moon",
+        "Landorus-Therian"
+    ],
+    "15": [
+        "Glimmora",
+        "Chien-Pao",
+        "Dragonite",
+        "Landorus-Therian",
+        "Gholdengo",
+        "Roaring%20Moon"
+    ],
+    "16": [
+        "Ogerpon-Hearthflame",
+        "Tornadus",
+        "Chien-Pao",
+        "Raging%20Bolt",
+        "Landorus",
+        "Glimmora",
+        "Ninetales-Alola"
+    ],
+    "17": [
+        "Landorus-Therian",
+        "Gholdengo",
+        "Glimmora",
+        "Chien-Pao",
+        "Roaring%20Moon",
+        "Dragonite"
+    ],
+    "18": [
+        "Kingambit",
+        "Landorus",
+        "Glimmora",
+        "Ninetales-Alola"
+    ],
+    "19": [
+        "Grimmsnarl",
+        "Sinistcha",
+        "Landorus",
+        "Gouging%20Fire",
+        "Corviknight",
+        "Goodra-Hisui",
+        "Iron%20Hands",
+        "Rillaboom",
+        "Archaludon"
+    ],
+    "21": [
+        "Kingambit%20",
+        "Landorus",
+        "Glimmora",
+        "Ninetales-Alola"
+    ],
+    "22": [
+        "Pelipper",
+        "Archaludon",
+        "Landorus",
+        "Sinistcha",
+        "Rillaboom",
+        "Ogerpon-Wellspring"
+    ],
+    "23": [
+        "Gouging%20Fire",
+        "Landorus",
+        "Chien-Pao",
+        "Sinistcha",
+        "Grimmsnarl",
+        "Corviknight",
+        "Goodra-Hisui"
+    ],
+    "24": [
+        "Ursaluna",
+        "Indeedee-F",
+        "Hatterene",
+        "Sinistcha",
+        "Torkoal",
+        "Incineroar",
+        "Diancie",
+        "Cresselia"
+    ],
+    "26": [
+        "Regidrago",
+        "Tornadus",
+        "Ogerpon-Hearthflame",
+        "Gholdengo",
+        "Farigiraf",
+        "Iron%20Hands"
+    ],
+    "27": [
+        "Chi-Yu",
+        "Tornadus",
+        "Farigiraf",
+        "Torkoal"
+    ],
+    "28": [
+        "Farigiraf",
+        "Tornadus",
+        "Torkoal",
+        "Chi-Yu",
+        "Landorus",
+        "Ogerpon-Hearthflame"
+    ],
+    "29": [
+        "Dragonite",
+        "Chien-Pao",
+        "Glimmora",
+        "Gholdengo",
+        "Landorus-Therian",
+        "Roaring%20Moon"
+    ],
+    "30": [
+        "Roaring%20Moon",
+        "Chien-Pao",
+        "Gholdengo",
+        "Landorus-Therian",
+        "Glimmora",
+        "Dragonite"
+    ],
+    "40": [
+        "Indeedee-F",
+        "Hatterene",
+        "Ursaluna",
+        "Torkoal",
+        "Iron%20Crown",
+        "Tornadus",
+        "Diancie"
+    ],
+    "41": [
+        "Hatterene",
+        "Indeedee-F",
+        "Ursaluna",
+        "Torkoal",
+        "Diancie",
+        "Gallade",
+        "Cresselia"
+    ],
+    "42": [
+        "Torkoal",
+        "Indeedee-F",
+        "Hatterene",
+        "Ursaluna",
+        "Farigiraf",
+        "Chi-Yu",
+        "Diancie"
+    ],
+    "43": [
+        "Diancie",
+        "Indeedee-F",
+        "Cresselia",
+        "Ursaluna",
+        "Hatterene",
+        "Torkoal"
+    ],
+    "44": [
+        "Cresselia",
+        "Diancie",
+        "Ursaluna",
+        "Incineroar",
+        "Indeedee-F"
+    ],
+    "45": [
+        "Incineroar%20",
+        "Rillaboom",
+        "Iron%20Hands",
+        "Ninetales-Alola",
+        "Kyurem",
+        "Comfey"
+    ],
+    "46": [
+        "Ninetales-Alola%20",
+        "Kyurem",
+        "Rillaboom",
+        "Incineroar",
+        "Iron%20Hands",
+        "Comfey"
+    ],
+    "53": [
+        "Amoonguss",
+        "Incineroar",
+        "Chien-Pao",
+        "Raging%20Bolt"
+    ],
+    "57": [
+        "Gholdengo%20",
+        "Chien-Pao",
+        "Landorus-Therian",
+        "Glimmora",
+        "Dragonite",
+        "Roaring%20Moon",
+        "Tornadus"
+    ],
+    "58": [
+        "Sinistcha%20",
+        "Incineroar",
+        "Landorus",
+        "Iron%20Hands",
+        "Archaludon"
+    ],
+    "60": [
+        "Ogerpon-Wellspring%20",
+        "Tornadus",
+        "Chien-Pao",
+        "Landorus",
+        "Incineroar",
+        "Archaludon",
+        "Gholdengo"
+    ],
+    "63": [
+        "Rillaboom%20",
+        "Incineroar",
+        "Iron%20Hands",
+        "Ninetales-Alola",
+        "Kyurem",
+        "Comfey"
+    ],
+    "82": [
+        "Amoonguss%20",
+        "Incineroar",
+        "Chien-Pao",
+        "Raging%20Bolt"
+    ],
+    "90": [
+        "Farigiraf%20",
+        "Tornadus",
+        "Torkoal",
+        "Chi-Yu",
+        "Landorus",
+        "Ogerpon-Hearthflame"
+    ],
+    "99": [
+        "Glimmora%20",
+        "Chien-Pao",
+        "Dragonite",
+        "Landorus-Therian",
+        "Gholdengo",
+        "Roaring%20Moon"
+    ],
+    "101": [
+        "Chien-Pao%20",
+        "Glimmora",
+        "Dragonite",
+        "Gholdengo",
+        "Roaring%20Moon",
+        "Landorus-Therian"
+    ],
+    "105": [
+        "Tornadus%20",
+        "Landorus",
+        "Ogerpon-Wellspring",
+        "Gholdengo",
+        "Ogerpon-Hearthflame"
+    ],
+    "110": [
+        "Landorus%20",
+        "Tornadus",
+        "Ogerpon-Wellspring"
+    ],
+    "129": [
+        "Archaludon%20",
+        "Pelipper",
+        "Landorus",
+        "Rillaboom"
+    ],
+    "134": [
+        "Pelipper%20",
+        "Archaludon",
+        "Landorus",
+        "Sinistcha",
+        "Rillaboom",
+        "Ogerpon-Wellspring"
+    ],
+    "136": [
+        "Torkoal%20",
+        "Indeedee-F",
+        "Hatterene",
+        "Ursaluna",
+        "Farigiraf",
+        "Chi-Yu",
+        "Diancie"
+    ],
+    "137": [
+        "Ursaluna%20",
+        "Indeedee-F",
+        "Hatterene",
+        "Sinistcha",
+        "Torkoal",
+        "Incineroar",
+        "Diancie",
+        "Cresselia"
+    ],
+    "138": [
+        "Cresselia%20",
+        "Diancie",
+        "Ursaluna",
+        "Incineroar",
+        "Indeedee-F"
+    ],
+    "147": [
+        "Dragonite%20",
+        "Chien-Pao",
+        "Glimmora",
+        "Gholdengo",
+        "Landorus-Therian",
+        "Roaring%20Moon"
+    ],
+    "154": [
+        "Kyurem%20",
+        "Ninetales-Alola",
+        "Incineroar",
+        "Rillaboom",
+        "Iron%20Hands",
+        "Comfey"
+    ],
+    "174": [
+        "Regidrago%20",
+        "Tornadus",
+        "Ogerpon-Hearthflame",
+        "Gholdengo",
+        "Farigiraf",
+        "Iron%20Hands"
+    ],
+    "179": [
+        "Landorus-Therian%20",
+        "Gholdengo",
+        "Glimmora",
+        "Chien-Pao",
+        "Roaring%20Moon",
+        "Dragonite"
+    ],
+    "184": [
+        "Indeedee-F%20",
+        "Hatterene",
+        "Ursaluna",
+        "Torkoal",
+        "Iron%20Crown",
+        "Tornadus",
+        "Diancie"
+    ],
+    "189": [
+        "Ogerpon-Hearthflame%20",
+        "Tornadus",
+        "Chien-Pao",
+        "Raging%20Bolt",
+        "Landorus",
+        "Glimmora",
+        "Ninetales-Alola"
+    ],
+    "241": [
+        "Grimmsnarl%20",
+        "Sinistcha",
+        "Landorus",
+        "Gouging%20Fire",
+        "Corviknight",
+        "Goodra-Hisui",
+        "Iron%20Hands",
+        "Rillaboom",
+        "Archaludon"
+    ]
+}
