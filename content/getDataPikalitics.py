@@ -294,10 +294,10 @@ for tipo in top_50.keys():
     string+=f"# {tipo} : {top_50[tipo]} \n"
     string+=f"## Coverage positiva :\n"
     for coverage in list(top_50_coverage_up[tipo]):
-        string+=f"- [[{oggi}/{unquote(coverage)}|{unquote(pokemon)}]]\n"
+        string+=f"- [[{oggi}/{unquote(coverage)}|{unquote(coverage)}]]\n"
     string+=f"\n## Coverage negativa :\n"
     for coverage in list(top_50_coverage_down[tipo]):
-        string+=f"- [[{oggi}/{unquote(coverage)}|{unquote(pokemon)}]]\n"
+        string+=f"- [[{oggi}/{unquote(coverage)}|{unquote(coverage)}]]\n"
 
 with open(os.path.join(percorso_completo, "Coverage di un tipo nel meta.md"),"w") as f:
     f.write(string)
