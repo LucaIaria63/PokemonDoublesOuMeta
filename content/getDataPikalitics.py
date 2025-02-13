@@ -189,14 +189,15 @@ tags:"""
         string += "\n# Stats"
         baseStat = teammates_pokemon_list[copia_nome_file][5]
         string+="""\n|BaseStat|Stat|MinStat|MaxStat|
-| --- | --- | --- | --- |"""
+| -------- | ---- | ------- | ------- |"""
         for stat in baseStat.keys():
             if stat=="HP":
-                string+=f"""\n|{stat}|{baseStat[stat]}|{int(int(baseStat[stat])*2+110)}|{int(int(baseStat[stat])*2+204)}|
-| --- | --- | --- | --- |"""
+                minStat = int(int(baseStat[stat])*2+110)
+                maxStat = int(int(baseStat[stat])*2+204)
             else:
-                string+=f"""\n|{stat}|{baseStat[stat]}|{int((int(baseStat[stat])*2+5)*0.9)}|{int((int(baseStat[stat])*2+99)*1.1)}|
-| --- | --- | --- | --- |"""
+                minStat = int((int(baseStat[stat])*2+5)*0.9)
+                maxStat = int((int(baseStat[stat])*2+99)*1.1)
+            string+=f"""\n|{stat}|{baseStat[stat]}|{minStat}|{maxStat}|"""
         string += "\n# Teammates"
         for nome in teammates_pokemon_list[copia_nome_file][0]:
             vero_nome = nome["name"]
@@ -284,7 +285,11 @@ title:  Dati finali
 - [[{oggi}/Resoconto]]
 - [[{oggi}/Archetipi]]
 - [[{oggi}/Coverage di un tipo nel meta]]
-- [[{oggi}/Mosse usate nel meta]]"""
+- [[{oggi}/Mosse usate nel meta]]
+# Lista Pokemon in ordine alfabetico: """
+
+for pokemon in teammates_pokemon_list.keys():
+    string+=f'\n- [[{oggi}/{unquote(pokemon)}|{unquote(pokemon)}]]'
 
 with open(os.path.join(percorso_corrente, "index.md"),"w") as f:
     f.write(f"{string}")
