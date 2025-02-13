@@ -286,7 +286,7 @@ title:  Dati finali
 - [[{oggi}/Archetipi]]
 - [[{oggi}/Coverage di un tipo nel meta]]
 - [[{oggi}/Mosse usate nel meta]]
-# Lista Pokemon in ordine alfabetico: """
+# Lista Pokemon: """
 
 for pokemon in teammates_pokemon_list.keys():
     string+=f'\n- [[{oggi}/{unquote(pokemon)}|{unquote(pokemon)}]]'

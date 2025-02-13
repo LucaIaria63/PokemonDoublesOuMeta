@@ -6,7 +6,7 @@ title:  Dati finali
 - [[2025-02-13/Archetipi]]
 - [[2025-02-13/Coverage di un tipo nel meta]]
 - [[2025-02-13/Mosse usate nel meta]]
-# Lista Pokemon in ordine alfabetico: 
+# Lista Pokemon: 
 - [[2025-02-13/Incineroar|Incineroar]]
 - [[2025-02-13/Rillaboom|Rillaboom]]
 - [[2025-02-13/Iron Hands|Iron Hands]]

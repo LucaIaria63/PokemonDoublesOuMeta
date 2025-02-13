@@ -6,14 +6,14 @@ tags:
 # Usage
 - 26%
 # Stats
-| BaseStat | Stat | MinStat | MaxStat |
+|BaseStat|Stat|MinStat|MaxStat|
 | -------- | ---- | ------- | ------- |
-| HP       | 95   | 300     | 394     |
-| Atk      | 115  | 211     | 361     |
-| Def      | 90   | 166     | 306     |
-| SpA      | 80   | 148     | 284     |
-| SpD      | 90   | 166     | 306     |
-| Spe      | 60   | 112     | 240     |
+|HP|95|300|394|
+|Atk|115|211|361|
+|Def|90|166|306|
+|SpA|80|148|284|
+|SpD|90|166|306|
+|Spe|60|112|240|
 # Teammates
 - [[2025-02-13/Rillaboom|Rillaboom]] : 48.682%
 - [[2025-02-13/Iron Hands|Iron Hands]] : 37.378%
