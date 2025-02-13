@@ -82,6 +82,15 @@ def fetch_teammates(pokemon_name):
         usage_singolo = soup.find('div', {'class': 'pokemon-ind-summary-text gold-font'})
         items_section = soup.find('div', {'id': 'items_wrapper'})
         position_month = soup.find('div', {'class': 'pokemon-ind-summary-text purple-font'})
+        baseStat = soup.find('div', {'id': 'bstats_wrapper'})
+
+        x = 0
+        stats_type = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe']
+        stats = {}
+
+        for stat in baseStat.find_all('div', style="display:inline-block;vertical-align: middle;margin-left: 20px;"):
+            stats[stats_type[x]] = stat.text
+            x+=1
 
         types = []
         for Type in typePokemon.find_all('span'):
@@ -90,7 +99,7 @@ def fetch_teammates(pokemon_name):
 
         if not teammates_section:
             print(f"Non sono stati trovati compagni di squadra per {pokemon_name}.")
-            return [[{'name': "NotFound", 'usage': "0%" }], types, usage_singolo.text, [], position_month.text]
+            return [[{'name': "NotFound", 'usage': "0%" }], types, usage_singolo.text, [], position_month.text, stats]
         
         teammates = []
         for entry in teammates_section.find_all('a', class_='teammate_entry'):
@@ -117,18 +126,28 @@ def fetch_teammates(pokemon_name):
                 except:
                     Mon_mosse[move.text][mossa] = []
                     Mon_mosse[move.text][mossa].append(pokemon_name)
-        items = []
+        items = {}
         if items_section:
-            for entry in items_section.find_all('div', class_='pokedex-move-entry-new'):
-                for item in entry.find_all('div', style='display:inline-block;'):
-                    items.append(item)
+            item_name = ''
+            item_percentage = ''
+            for entry in items_section.find_all('div', class_='pokedex-move-entry-new'):       
+                for item in entry.find_all('div', style=True):
+                    style = item['style']
+                    if 'display:inline-block;'==style:
+                        item_name = item.text
+                    if style == "display:inline-block;float:right;":
+                        item_percentage = item.text
+                    if item_name!='' and item_percentage!='':
+                        items[item_name] = item_percentage
+                        item_name = ''
+                        item_percentage = ''
 
-        return [teammates, types, usage_singolo.text, items, position_month.text]
+        return [teammates, types, usage_singolo.text, items, position_month.text, stats]
     
     except requests.exceptions.RequestException as e:
         print(f"Errore durante la richiesta per {pokemon_name}: {e}")
         types = ["NonTrovato"]
-        return [[{'name': "NotFound", 'usage': "0%" }], types, "0%", [], "51#"]
+        return [[{'name': "NotFound", 'usage': "0%" }], types, "0%", {}, "51#", {'HP' : 0, 'Atk' : 0, 'Def' : 0, 'SpA' : 0, 'SpD' : 0, 'Spe' : 0}]
 
 
 pokemon = "Incineroar" 
@@ -167,6 +186,17 @@ tags:"""
             string += f"\n- {tipi}"
         string += "\n---"
         string += f"\n# Usage\n- {teammates_pokemon_list[copia_nome_file][2]}"
+        string += "\n# Stats"
+        baseStat = teammates_pokemon_list[copia_nome_file][5]
+        string+="""\n|BaseStat|Stat|MinStat|MaxStat|
+| --- | --- | --- | --- |"""
+        for stat in baseStat.keys():
+            if stat=="HP":
+                string+=f"""\n|{stat}|{baseStat[stat]}|{int(int(baseStat[stat])*2+110)}|{int(int(baseStat[stat])*2+204)}|
+| --- | --- | --- | --- |"""
+            else:
+                string+=f"""\n|{stat}|{baseStat[stat]}|{int((int(baseStat[stat])*2+5)*0.9)}|{int((int(baseStat[stat])*2+99)*1.1)}|
+| --- | --- | --- | --- |"""
         string += "\n# Teammates"
         for nome in teammates_pokemon_list[copia_nome_file][0]:
             vero_nome = nome["name"]
@@ -174,14 +204,12 @@ tags:"""
             if vero_nome[-3] + vero_nome[-2] + vero_nome[-1] == "%20": vero_nome = vero_nome[:-3]
             while vero_nome[-1] == " ": vero_nome = vero_nome[:-1]
             usage = nome["usage"]
-            string += f"\n- [[{oggi}/{vero_nome}|{unquote(vero_nome)}]] : {usage}"
+            string += f"\n- [[{oggi}/{unquote(vero_nome)}|{unquote(vero_nome)}]] : {usage}"
 
         string += "\n# Items"
-        for item in teammates_pokemon_list[copia_nome_file][3]:
-            pass
-            #item_name = item["item"]
-            #item_usage = item["usage"]
-            #string += f"\n- {item_name} : {item_usage}"
+        items = teammates_pokemon_list[copia_nome_file][3]
+        for item in items.keys():
+            string += f"\n- #{item} : {items[item]}"
 
         f.write(string)
 
